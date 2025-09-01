@@ -26,7 +26,7 @@ RUN apt-get update &&\
   libboost-all-dev  libhdf5-serial-dev python3-pydot python3-venv python3-tk mypy \
   m4 libcapstone-dev libpng-dev libelf-dev pkg-config wget cmake doxygen clang-format \
   # install riscv cross compile
-  gcc-riscv64-linux-gnu
+  gcc-riscv64-linux-gnu g++-riscv64-linux-gnu
 
 # set up default locale
 RUN locale-gen en_US.UTF-8

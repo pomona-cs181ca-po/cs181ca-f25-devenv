@@ -40,7 +40,7 @@ RUN apt-get -y install\
   libboost-all-dev  libhdf5-serial-dev python3-pydot python3-venv python3-tk mypy \
   m4 libcapstone-dev libpng-dev libelf-dev pkg-config wget cmake doxygen clang-format \
   # install dependeces for riscv gnu toolchain
-  gcc-riscv64-linux-gnu
+  gcc-riscv64-linux-gnu g++-riscv64-linux-gnu
 
 # link x86-64 versions of common tools into /usr/x86_64-linux-gnu/bin
 RUN for i in addr2line c++filt cpp-9 g++-9 gcc-9 gcov-9 gcov-dump-9 gcov-tool-9 size strings; do \
